@@ -1,7 +1,6 @@
 'use client'
 
 import { useState } from 'react'
-import Image from 'next/image'
 
 // ── Tweak these defaults ──────────────────────────────────────────────────
 // width:         front cover face width in px
@@ -105,13 +104,20 @@ export function PerspectiveBook({
             overflow: 'hidden',
           }}
         >
-          <Image
+          {/* eslint-disable-next-line @next/next/no-img-element */}
+          <img
             src={coverSrc}
             alt={alt}
-            fill
-            sizes={`${width}px`}
-            style={{ objectFit: 'cover', objectPosition: 'center top' }}
             draggable={false}
+            style={{
+              position: 'absolute',
+              inset: 0,
+              width: '100%',
+              height: '100%',
+              objectFit: 'cover',
+              objectPosition: 'center top',
+              display: 'block',
+            }}
           />
           {/* Gloss sheen overlay */}
           <div
