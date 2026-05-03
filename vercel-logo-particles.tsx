@@ -5,7 +5,7 @@ import React, { useRef, useEffect } from 'react'
 // ── Tweak these values ────────────────────────────────────────────────────────
 const CONFIG = {
   particleDensity:    6000,   // base particle count at 1920×1080; auto-scales with viewport area
-  logoScale:          0.45,   // logo height as a fraction of viewport height
+  logoScale:          0.65,   // logo height as a fraction of viewport height
   particleSizeMin:    0.5,    // px
   particleSizeMax:    1.5,    // px
   particleColor:      '#FF7900',
@@ -147,7 +147,7 @@ export default function Component() {
         animationFrameId = requestAnimationFrame(animate)
       }
 
-      img.src = '/correctaalogo.svg'
+      img.src = '/hermeszeratul.svg'
     }
 
     updateCanvasSize()
