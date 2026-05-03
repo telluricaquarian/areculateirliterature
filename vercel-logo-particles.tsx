@@ -4,10 +4,10 @@ import React, { useRef, useEffect } from 'react'
 
 // ── Tweak these values ────────────────────────────────────────────────────────
 const CONFIG = {
-  particleDensity:    6000,   // base particle count at 1920×1080; auto-scales with viewport area
-  logoScale:          0.65,   // logo height as a fraction of viewport height
+  particleDensity:    8000,   // base particle count at 1920×1080; auto-scales with viewport area
+  logoScale:          0.82,   // logo height as a fraction of viewport height
   particleSizeMin:    0.5,    // px
-  particleSizeMax:    1.5,    // px
+  particleSizeMax:    1.8,    // px
   particleColor:      '#FF7900',
   idleMotionStrength: 0.6,    // max ambient drift amplitude in px (0 = frozen)
   idleMotionSpeed:    0.0008, // radians per ms — higher = faster drift
